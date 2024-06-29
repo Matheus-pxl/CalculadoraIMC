@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CalculadoraActivity">
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="300dp"
+        android:hint="Digite o seu peso em Kgs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editAltura"
+        android:hint="Digite sua altura em metros"
+        android:layout_width="300dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editPeso"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btCalcular"
+        android:text="Calcular"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editAltura"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/viewResult"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="36sp"
+        android:gravity="center_horizontal"
+        tools:text="@string/resultado_imc"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btCalcular"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

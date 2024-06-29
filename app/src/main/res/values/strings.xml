@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculadoraIMC</string>
+    <string name="resultado_imc">Seu IMC é %.1f (%s)</string>
+</resources>
